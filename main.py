@@ -18,4 +18,18 @@ while student_name == "":
     student_name = input("Enter student name: ")
 
 registration_number = input("Enter registration number: ")
+
+
+graduation_year = int(input("Enter graduation year: "))
+
+graduation_eligible = (
+    graduation_year >= 2025
+    and graduation_year <= 2027
+)
+
+if graduation_eligible:
+    print("Eligible for placement.")
+else:
+    print("Not eligible for placement.")
+
  
