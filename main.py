@@ -11,7 +11,7 @@ print("=" * 50)
 # 1. COLLECT STUDENT DETAILS
 # --------------------------------------------------
 
-# TODO: Validate that the student name is not empty.
+# TOD0: Validate that the student name is not empty.
 student_name = input("Enter student name: ")
 while student_name == "":
     print("Student name should not be empty.")
@@ -37,5 +37,15 @@ attendance = float(input("Enter attendance percentage: "))
 while attendance < 0 or attendance > 100:
     print("Enter valid attandance between 0 and 100!")
     attendance = float(input("Enter attendance percentage: "))
+
+# TODo: Accept only yes or no.
+project_input = input(
+    "Has the student completed the required project? Enter yes or no: "
+)
+while not (project_input == "yes" or project_input == "no"):
+    print("Invalid input! Enter yes or no")
+    project_input = input(
+        "Has the student completed the required project? Enter yes or no: "
+    )
 
  
