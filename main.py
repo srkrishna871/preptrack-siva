@@ -48,4 +48,19 @@ while not (project_input == "yes" or project_input == "no"):
         "Has the student completed the required project? Enter yes or no: "
     )
 
+if project_input == "yes":
+    project_completed = True
+else:
+    project_completed = False
+
+# TODo: Accept only yes or no.
+profile_input = input(
+    "Is the student profile verified? Enter yes or no: "
+)
+while not (profile_input == "yes" or profile_input == "no"):
+    print("Invalid input! Enter yes or no: ")
+    profile_input = input(
+        "Is the student profile verified? Enter yes or no: "
+    )
+
  
