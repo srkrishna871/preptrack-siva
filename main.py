@@ -32,4 +32,10 @@ if graduation_eligible:
 else:
     print("Not eligible for placement.")
 
+# TODo: Validate attendance between 0 and 100.
+attendance = float(input("Enter attendance percentage: "))
+while attendance < 0 or attendance > 100:
+    print("Enter valid attandance between 0 and 100!")
+    attendance = float(input("Enter attendance percentage: "))
+
  
